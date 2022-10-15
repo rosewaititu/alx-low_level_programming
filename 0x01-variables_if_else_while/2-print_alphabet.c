@@ -2,11 +2,14 @@
 /**
  * main-prints alphabets
  *
- */int main(void)
+ * Return:always zero
+ */
+
+int main(void)
 {
 char c = 'a';
-for(c='a';c <= 'z'; c++)
+for (c = 'a'; c <= 'z'; c++)
 putchar(c);
 putchar('\n');
-return(0);
+return (0);
 }
