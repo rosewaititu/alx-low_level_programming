@@ -3,14 +3,13 @@
 
 
 /**
+  * main - print alphabet except q and e
  *
- *  * main - print alphabet except q and e
+ *   
  *
- *   *
+ * Return: zero
  *
- *    * Return: zero
- *
- *     */
+  */
 
 int main(void)
 {
