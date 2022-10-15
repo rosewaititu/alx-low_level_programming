@@ -1,18 +1,37 @@
 #include <stdio.h>
+
+
+
 /**
- * main-prints alphabets
  *
- * Return:always zero
- */
+ *    * main - print alphabet in upper and lower
+ *
+ *       *
+ *
+ *          * Return: zero
+ *
+ *             */
 
 int main(void)
+
 {
-char c = 'a';
-char C = 'A';
-for (c = 'a'; c <= 'z'; c++)
-putchar(c);
-for (C = 'A'; C <= 'Z'; C++)
-putchar(C);
-putchar('\n');
-return (0);
+
+		char ch;
+
+			char CH;
+
+
+
+				for (ch = 'a'; ch <= 'z'; ch++)
+
+							putchar(ch);
+
+					for (CH = 'A'; CH <= 'Z'; CH++)
+
+								putchar(CH);
+
+						putchar('\n');
+
+							return (0);
+
 }
