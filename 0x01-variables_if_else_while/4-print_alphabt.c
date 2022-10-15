@@ -22,7 +22,7 @@ if (c == 'e' || c == 'q')
 {
 continue;
 }
-putchar(ch);
+putchar(c);
 }
 putchar('\n');
 return (0);
