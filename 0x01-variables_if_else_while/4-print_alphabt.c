@@ -5,7 +5,6 @@
 /**
   * main - print alphabet except q and e
  *
- *   
  *
  * Return: zero
  *
