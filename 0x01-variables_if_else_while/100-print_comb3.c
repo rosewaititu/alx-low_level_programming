@@ -4,10 +4,7 @@
 
 /**
  * main - print 00 to 89
- *
- *   
- *
- * Return: zero
+ *Return: zero
  *
  */
 
