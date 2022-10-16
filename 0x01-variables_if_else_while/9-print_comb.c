@@ -1,21 +1,25 @@
 #include <stdio.h>
 /**
- * main -pront numbers with comma and space
+ * main - prints numbers
  *
  *
- * Return:Always zero
- */
+ *  Return: 0 is successful
+  */
+
 int main(void)
 {
-int x;
-for (x = '0'; x <= '9'; x++)
-{
-putchar(x);
-if (x == 9)
-	continue;
-putchar(',');
-putchar(' ');
-}
-putchar('\n');
-return (0);
+		int d;
+
+			for (d = 0; d <= 9; d++)
+					{
+								putchar((d % 10) + '0');
+										if (d == 9)
+														continue;
+
+												putchar(',');
+														putchar(' ');
+															}
+
+				putchar('\n');
+					return (0);
 }
