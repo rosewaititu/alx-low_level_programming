@@ -22,6 +22,8 @@ if (a + b != 17)
 {
 putchar(',');
 putchar(' ');
+}
+}
 a++;
 }
 b++;
