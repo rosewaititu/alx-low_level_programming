@@ -3,14 +3,13 @@
 
 
 /**
+ * main - print 00 to 89
  *
- *  * main - print 00 to 99
+ *   
  *
- *   *
+ * Return: zero
  *
- *    * Return: zero
- *
- *     */
+ */
 
 int main(void)
 
