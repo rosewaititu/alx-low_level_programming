@@ -1,29 +1,31 @@
 #include <stdio.h>
 
-
-
 /**
- * main - print 00 to 89
- *Return: zero
- *
- */
-
+   * Description: main - prints a combination of 2 numbers = 17
+    *
+     * Return: 0 if successful
+     */
 int main(void)
-
 {
-
-int i;
-for (i = 0; i <= 89; i++)
+int a;
+int b = 0;
+while (b < 10)
 {
-putchar((i / 10) + '0');
-putchar((i % 10) + '0');
-if (i == 89)
-
-break;
+a = 0;
+while (a < 10)
+{
+if (b != a && b < a)
+{
+putchar('0' + b);
+putchar('0' + a);
+if (a + b != 17)
+{
 putchar(',');
 putchar(' ');
+a++;
+}
+b++;
 }
 putchar('\n');
 return (0);
-
 }
