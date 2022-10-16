@@ -2,7 +2,7 @@
 /**
  * main-prints alphabets in reverse
  *
- * return:Always zero
+ * Return:Always zero
  */
 int main(void)
 {
