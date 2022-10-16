@@ -5,20 +5,17 @@
  *
  *  Return: 0 is successful
   */
-
 int main(void)
 {
-		int d;
+int d;
 for (d = 0; d <= 9; d++)
-					{
-								putchar((d % 10) + '0');
+{
+putchar((d % 10) + '0');
 if (d == 9)
-														continue;
-
-												putchar(',');
-														putchar(' ');
-															}
-
-				putchar('\n');
-					return (0);
+continue;
+putchar(',');
+putchar(' ');
+}
+putchar('\n');
+return (0);
 }
