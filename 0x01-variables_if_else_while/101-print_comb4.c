@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- *  * Description: main - prints combination of 3 numbers
- *   *
- *    * Return: 0 if successful
- *    */
+   * Description: main - prints combination of 3 numbers
+    *
+     * Return: 0 if successful
+     */
 int main(void)
 {
 int m, n, o;
