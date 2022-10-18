@@ -7,8 +7,8 @@
 	char* main="_putchar";
 	while (*main)
 	{
-		_putchar (*main);
+		_putchar(*main);
 		main++;}
-	_putchar("/n");
+	_putchar('/n');
 		return(0);
 }
