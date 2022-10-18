@@ -1,9 +1,9 @@
 #include "main.h"
  /**
-*_isalpha- prints alphabet
-*
-*@c output
-*Return:always zero
+  *_isalpha - prints alphabet
+  *
+  *@c is called
+  *Return:Always zero
 */
 int _isalpha(int c)
 
