@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
-   * Description _isalpha-prints- upper case.
-    *@c:ltter tested
-     * Return: Always 0.
-      */
+ *  Description _isalpha-prints- upper case.
+ *
+ *
+ *@c:ltter tested
+ * Return: Always 0.
+  */
 int _isalpha(int c)
 
 	{
