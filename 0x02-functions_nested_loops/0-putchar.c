@@ -3,12 +3,16 @@
  *main.h-prints putchar.c
 *
 * Return:output
-*/int main(void){
-	char* main="_putchar";
-	while (*main)
-	{
-		_putchar(*main);
-		main++;}
-	_putchar('/n');
-		return(0);
-}
+*/
+int main(void)
+{
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
+return (0);}
