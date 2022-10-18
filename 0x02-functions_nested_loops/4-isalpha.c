@@ -1,6 +1,6 @@
 #include "main.h"
  /**
-*  _isalpha -priints alphabet
+*_isalpha- prints alphabet
 *
 *@c output
 *Return:always zero
