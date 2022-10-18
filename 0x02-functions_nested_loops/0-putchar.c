@@ -4,11 +4,11 @@
 *
 * Return:output
 */int main(void){
-	char* ch="_putchar";
-	while (*ch)
+	char* main="_putchar";
+	while (*main)
 	{
-		_putchar (*ch);
-		ch++;}
+		_putchar (*main);
+		main++;}
 	_putchar("/n");
 		return(0);
 }
