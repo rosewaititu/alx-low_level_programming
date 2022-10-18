@@ -1,21 +1,27 @@
 #include <stdio.h>
+#include "main.h"
 /**
-   * main - checks code
-    *
-     * Return: Always 0
-    */
+ * print_to_98 - checks code
+ * @n:input
+ * Return: always 0
+ */
 
-int main(void)
+void print_to_98(int n)
 {
-int x;
-int sum = 0;
-for (x = 0; x < 1024; x++)
+if (n >= 98)
 {
-if ((x % 3) == 0 || (x % 5) == 0)
+while (n > 98)
 {
-sum += x;
+printf("%d, ", n--);
 }
+printf("%d\n", n);
 }
-printf("%d\n", sum);
-return (0);
+else
+{
+while (n < 98)
+{
+printf("%d, ", n++);
+}
+printf("%d\n", n);
+}
 }
