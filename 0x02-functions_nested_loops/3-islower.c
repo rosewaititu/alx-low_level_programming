@@ -1,6 +1,6 @@
 /**
-   * main - check the code.
-    *
+   *_islower - check the code.
+    *@c -character to be ccked
      * Return: Always 0.
  */
 int _islower(int c)
