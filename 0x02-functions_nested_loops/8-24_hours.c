@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
-   * main - print every minute of jack bauer.
-    *
-     */
+ * main - print every minute of jack bauer.
+ *
+ * Return:Always 0
+         */
 void jack_bauer(void)
 {
 		int hour;
@@ -19,5 +20,4 @@ _putchar('0' + minute / 10);
 _putchar('0' + minute % 10);
 _putchar('\n');
 }
-																			
 }
