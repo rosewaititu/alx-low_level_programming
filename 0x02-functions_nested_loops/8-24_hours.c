@@ -2,10 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - print every minute of jack bauer.
- *
- * Return:Always 0
-         */
+ * jack_bauer - prints each minute of the day
+ * Return:returns 0
+*/
 void jack_bauer(void)
 {
 		int hour;
