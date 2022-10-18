@@ -1,6 +1,6 @@
 #include "main.h"
  /**
-* Desctription _isalpha -prints lphabet
+* Desctription: _isalpha -prints alphabet
 *
 *@c output
 *Return:always zero
