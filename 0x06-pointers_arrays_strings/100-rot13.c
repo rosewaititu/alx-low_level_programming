@@ -1,10 +1,9 @@
 #include "main.h"
-
 /**
- *rot13 - encodes in rot13*   
- * @s: string
- * Return: Always successful
- */
+   *rot13 - encodes in rot13
+   *  * @s: string
+  * Return: Always successful
+  :/
 
 char *rot13(char *s)
 {
