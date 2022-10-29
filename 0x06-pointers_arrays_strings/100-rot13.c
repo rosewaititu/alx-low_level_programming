@@ -1,24 +1,42 @@
 #include "main.h"
+
 /**
-   *rot13 - encodes in rot13
-   *  * @s: string
-  * Return: Always successful
-  :/
+ *rot13 -  encodes a string using rot13
+ *@str:the string targeted
+ *Return: returns the encoded string
+ */
 
-char *rot13(char *s)
+char *rot13(char *str)
 {
-int i, j;
-char inp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-
-for (i = 0; s[i] != '\0'; i++)
-for (j = 0; j < 54; j++)
+int index1, index2;
+char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F',
+'G', 'H', 'I', 'J', 'K', 'L',
+'M', 'N', 'O', 'P', 'Q', 'R',
+'S', 'T', 'U', 'V', 'W', 'X',
+'Y', 'Z', 'a', 'b', 'c', 'd',
+'e', 'f', 'g', 'h', 'i', 'j',
+'k', 'l', 'm', 'n', 'o', 'p',
+'q', 'r', 's', 't', 'u', 'v',
+'w', 'x', 'y', 'z'};
+char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S',
+'T', 'U', 'V', 'W', 'X', 'Y',
+'Z', 'A', 'B', 'C', 'D', 'E',
+'F', 'G', 'H', 'I', 'J', 'K',
+'L', 'M', 'n', 'o', 'p', 'q',
+'r', 's', 't', 'u', 'v', 'w',
+'x', 'y', 'z', 'a', 'b', 'c',
+'d', 'e', 'f', 'g', 'h', 'i',
+'j', 'k', 'l', 'm'};
+while (str[++index1])
 {
-if (s[i] == inp[j])
+for (index2 = 0; index2 < 52; index2++)
 {
-s[i] = rot[j];
-break;															}
+if (str[index1] == alphabet[index2])
+{
+str[index1] = rot13key[index2];
+break;
 }
 }
-return (s);
+}
+return (str);
 }
