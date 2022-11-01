@@ -7,7 +7,6 @@ nclude "main.h"
  * @accept: reference bytes
  * Return: no of bytes from accept consists of bytes from s
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int b = 0;
