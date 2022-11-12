@@ -2,43 +2,39 @@
 #include <stdlib.h>
 
 /**
- * str_concat - concatenates 2 strings
+ * string_nconcat - concatenates string
+ *
  * @s1: string 1
  * @s2: string 2
- *
+ * @n: index
  * Return: Null if unsuccessful
  */
 
-char *str_concat(char *s1, char *s2)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s;
-	unsigned int i, j, k, l;
+	unsigned int sz1 = 0, sz2 = 0, i;
 
-	if (!s1)
+	if (s1 == NULL)
 		s1 = "";
-	if (!s2)
+	if (s2 == NULL)
 		s2 = "";
+	while (s1[sz1] != '\0')
+		sz1++;
+	while (s2[sz2] != '\0')
+		sz2++;
 
-	for (i = 0; s1[i] != '\0'; i++)
-		;
-	for (j = 0; s2[j] != '\0'; j++)
-		;
+	if (n > sz2)
+		n = sz2;
 
-	s = malloc(sizeof(char) * (i + j + 1));
-
-	if (!s)
-	{
-		free(s);
-		return (NULL);
-	}
-
-	for (k = 0; k < i; k++)
-		s[k] = s1[k];
-
-	l = j;
-
-	for (j = 0; j <= l; k++, j++)
-		s[k] = s2[j];
+	s = malloc(sizeof(char) * (sz1 + n + 1));
+	if (s == NULL)
+		return (0);
+	for (i = 0; i < sz1; i++)
+		s[i] = s1[i];
+	for (; i < (sz1 + n); i++)
+		s[i] = s2[i - sz1];
+	s[i] = '\0';
 
 	return (s);
 }
