@@ -1,4 +1,4 @@
-nclude "function_pointers.h"
+#include "function_pointers.h"
 
 /**
  * int_index - searches for an integer/ returns index of the 1st element
